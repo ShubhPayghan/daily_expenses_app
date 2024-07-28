@@ -1,0 +1,36 @@
+daily_expenses_app/
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── utils.py
+│   ├── validation.py
+│   ├── balance_sheet.py
+│   ├── auth.py               # User authentication and authorization (Bonus Points)
+│   ├── services/             # Business logic and services
+│   │   ├── __init__.py
+│   │   ├── user_service.py
+│   │   ├── expense_service.py
+│   └── templates/
+│       └── balance_sheet_template.html
+│   └── static/
+│       └── styles.css
+├── tests/
+│   ├── __init__.py
+│   ├── test_models.py
+│   ├── test_routes.py
+│   ├── test_utils.py
+│   ├── test_validation.py
+│   ├── test_balance_sheet.py
+│   ├── test_auth.py          # Tests for authentication and authorization (Bonus Points)
+│   └── test_services.py      # Tests for services
+├── migrations/
+├── config.py
+├── requirements.txt
+├── run.py
+├── README.md
+├── .env                      # Environment variables for configuration (e.g., DATABASE_URL, SECRET_KEY)
+├── uwsgi.ini
+└── docker/
+    ├── Dockerfile            # Docker configuration
+    └── docker-compose.yml    # Docker Compose configuration

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balance Sheet</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Balance Sheet</h1>
+    <table>
+        <tr>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>User</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.description }}</td>
+            <td>{{ row.amount }}</td>
+            <td>{{ row.user }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
